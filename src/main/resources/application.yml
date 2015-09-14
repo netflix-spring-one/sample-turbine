@@ -4,7 +4,7 @@ security.basic.enabled: false
 turbine:
   aggregator:
     clusterConfig: SAMPLE
-  appConfig: recommendations
+  appConfig: recommendations,membership
   clusterNameExpression: appGroupName
 eureka.client.serviceUrl.defaultZone: http://localhost:9000/eureka/
 server.port: 9002
