@@ -1,9 +1,10 @@
 spring:
   application.name: turbine
 security.basic.enabled: false
-netflix:
-  appinfo.name: ${spring.application.name}
 turbine:
-  appConfig: membership
+  aggregator:
+    clusterConfig: SAMPLE
+  appConfig: recommendations
+  clusterNameExpression: appGroupName
 eureka.client.serviceUrl.defaultZone: http://localhost:9000/eureka/
 server.port: 9002
